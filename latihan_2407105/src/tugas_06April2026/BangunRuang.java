@@ -1,26 +1,29 @@
 package tugas_06April2026;
 
 class BangunRuang extends BangunDatar {
-    private int tinggi;
+    private double tinggi;
 
-    // Constructor
-    public BangunRuang(int panjang, int lebar, int tinggi) {
+    public BangunRuang(double panjang, double lebar, double tinggi) {
         super(panjang, lebar);
         this.tinggi = tinggi;
     }
 
-    // Getter
-    public int getTinggi() {
+    public double getTinggi() {
         return tinggi;
     }
 
-    // Setter
-    public void setTinggi(int tinggi) {
+    public void setTinggi(double tinggi) {
         this.tinggi = tinggi;
     }
 
-    // Method hitung volume
-    public int hitungVolume() {
+    
+    @Override
+    public double hitungVolume() {
+        return getPanjang() * getLebar() * tinggi;
+    }
+
+
+    public double hitungVolume2() {
         return getPanjang() * getLebar() * tinggi;
     }
 }

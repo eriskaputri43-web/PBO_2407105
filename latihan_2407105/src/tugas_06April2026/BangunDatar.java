@@ -1,36 +1,36 @@
 package tugas_06April2026;
 
 public class BangunDatar {
-    private int panjang;
-    private int lebar;
+    private double panjang;
+    private double lebar;
 
-    // Constructor
-    public BangunDatar(int panjang, int lebar) {
+    public BangunDatar(double panjang, double lebar) {
         this.panjang = panjang;
         this.lebar = lebar;
     }
 
-    // Getter
-    public int getPanjang() {
+    public double getPanjang() {
         return panjang;
     }
 
-    public int getLebar() {
+    public double getLebar() {
         return lebar;
     }
 
-    // Setter
-    public void setPanjang(int panjang) {
+    public void setPanjang(double panjang) {
         this.panjang = panjang;
     }
 
-    public void setLebar(int lebar) {
+    public void setLebar(double lebar) {
         this.lebar = lebar;
     }
 
-    // Method hitung luas
-    public int hitungLuas() {
-        return panjang * lebar;
+    public double hitungLuas() {
+        return panjang * lebar * 2;
+    }
+
+    // Method volume 
+    public double hitungVolume() {
+        return 0;
     }
 }
-
