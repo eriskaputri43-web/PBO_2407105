@@ -1,0 +1,42 @@
+@startuml
+
+class BangunDatar {
+  # luas : double
+  # keliling : double
+  + getLuas() : double
+  + getKeliling() : double
+}
+
+class Persegi {
+  - sisi : double
+  + setSisi(sisi : double)
+  + hitung()
+}
+
+class PersegiPanjang {
+  - panjang : double
+  - lebar : double
+  + setData(panjang : double, lebar : double)
+  + hitung()
+}
+
+class Segitiga {
+  - alas : double
+  - tinggi : double
+  - sisiMiring : double
+  + setData(alas : double, tinggi : double, sisiMiring : double)
+  + hitung()
+}
+
+class Lingkaran {
+  - jari : double
+  + setJari(jari : double)
+  + hitung()
+}
+
+BangunDatar <|-- Persegi
+BangunDatar <|-- PersegiPanjang
+BangunDatar <|-- Segitiga
+BangunDatar <|-- Lingkaran
+
+@enduml
